@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动设备适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>东方韵下载</title>
+</head>
+<body>
+<div style="text-align:right;font-size: 20px">右上角选择 在浏览器打开<img src="right_up_arrow.png"></div>
+<!--引入bundle.js-->
+<script type="text/javascript">
+  //判断浏览器
+  var u = navigator.userAgent;
+  if (/MicroMessenger/gi.test(u)) {
+    // 引导用户在浏览器中打开
+  } else if (u.indexOf('android') > -1 || u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {
+    window.location.href = "http://app.mi.com/details?id=com.dfy.health";
+
+  } else if (u.indexOf('iPhone') > -1 || u.indexOf('iPad') > -1) {
+    //IOS
+    window.location.href = "https://itunes.apple.com/us/app/东方韵/id1298905772";
+  }
+</script>
+</body>
+</html>
